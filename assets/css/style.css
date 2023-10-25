@@ -35,10 +35,15 @@
 
 /* #region UTILITY */
 
+body{
+    font-family: sans-serif;
+}
+
 :root{
     --responsive-primary: rgb(125, 107, 214);
     --responsive-secondary: rgb(38, 117, 255);
-    --responsive-column: rgb(126, 192, 246);
+    --responsive-column: rgb(181, 208, 255);
+    --responsive-white: white;
 }
 
 .container{
@@ -91,6 +96,11 @@
 .card{
     background-color: var(--responsive-column);
     border-radius: 1rem;
+    padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+}
+
+.pb-125{
+    padding-bottom: 1.25rem;
 }
 
 .text-center{
@@ -104,6 +114,14 @@
 img{
     display: block;
 }
+
+.button{
+    border: none;
+    margin: 1.5rem 0;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
 
 /* #endregion UTILITY */
 
@@ -130,14 +148,46 @@ img{
 /* #endregion HEADER */
 
 
-
 /* #region MAIN */
 
+#site-main p{
+        line-height: 1.25rem;
+        font-size: 0.75rem;
+}
+
+    /* section .features */
+    
+    .features h3,
+    .features .fa-solid{
+        color: var(--responsive-secondary);
+        padding-bottom: 1.5rem;
+    }
+
+    .button.app-store{
+        color: var(--responsive-white);
+        background-color: var(--responsive-secondary);
+        padding: .5rem 2.5rem;
+        border-radius: 1.25rem;
+    }
+
+    .features #phone{
+        margin-bottom: -1.25rem;
+    }
+
+    .features img{
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .features .fa-solid{
+        font-size: 4rem;
+    }
+
+    
 
 
 
 /* #endregion MAIN */
-
 
 
 /* #region FOOTER */
