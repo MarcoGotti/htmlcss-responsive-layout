@@ -35,6 +35,11 @@
 
 /* #region UTILITY */
 
+:root{
+    --responsive-primary: rgb(125, 107, 214);
+    --responsive-secondary: rgb(38, 117, 255);
+    --responsive-column: rgb(126, 192, 246);
+}
 
 .container{
     width: 90%;
@@ -84,7 +89,7 @@
 }
 
 .card{
-    background-color: rgb(126, 192, 246);
+    background-color: var(--responsive-column);
     border-radius: 1rem;
 }
 
@@ -93,7 +98,11 @@
 }
 
 .planning, .benefits, .start{
-    background-color: rgb(125, 107, 214);
+    background-color: var(--responsive-primary);
+}
+
+img{
+    display: block;
 }
 
 /* #endregion UTILITY */
@@ -101,11 +110,21 @@
 /* #region HEADER */
 
 #site_header{
-    background-color: blue;
+    background-color: var(--responsive-secondary);
 }
 
 .menu-desktop{
     display: none;
+}
+
+.logo{
+   padding: 1rem 0;
+}
+
+.menu-mobile{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
 }
 
 /* #endregion HEADER */
