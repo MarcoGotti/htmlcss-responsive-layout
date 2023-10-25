@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* #region DEBUG */
+
+.debug .logo{
+    background-color: red;
+    width: 50px;
+    aspect-ratio: 2 / 1;
+}
+.debug .menu-desktop{
+    background-color: red;
+    width: 300px;
+    height: 25px;
+}
+.debug .menu-mobile{
+    background-color: red;
+    width: 50px;
+    height: 25px;
+}
+.debug .card{
+    height: 250px;
+}
+.debug .temporary{
+    background-color: rgb(126, 192, 246);
+    height: 400px;
+}
+
+/* #endregion DEBUG */
+
+
+
+/* #region UTILITY */
+
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -0.5rem;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.space-btw{
+    justify-content: space-between;
+}
+
+.col{
+    width: 100%;
+}
+
+/* .col-md-8{
+    width: calc(100% / 12 * 8);
+}
+
+.col-md-4{
+    width: calc(100% / 12 * 4);
+}
+
+.col-lg-6{
+    width: calc(100% / 12 * 6);
+} */
+
+[class*="col-"]{
+    padding: 0.5rem;
+}
+
+.p-05{
+    padding: 0.5rem;
+}
+
+.features, .planning, .testimonials, .benefits, .about-us{
+    padding: 1rem 0;
+}
+
+.card{
+    background-color: rgb(126, 192, 246);
+    border-radius: 1rem;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.planning, .benefits, .start{
+    background-color: rgb(125, 107, 214);
+}
+
+/* #endregion UTILITY */
+
+/* #region HEADER */
+
+#site_header{
+    background-color: blue;
+}
+
+.menu-desktop{
+    display: none;
+}
+
+/* #endregion HEADER */
+
+
+
+/* #region MAIN */
+
+
+
+
+/* #endregion MAIN */
+
+
+
+/* #region FOOTER */
+
+.site-footer{
+    background-color: rgb(44, 44, 44);
+}
+
+/* #endregion FOOTER */
+
+/* #region MEDIA QUERY */
+
+
+/* @media screen and (max-width: 768px){
+    
+}  
+
+
+@media screen and (max-width: 1400px){
+    .menu-desktop{
+        display: block;
+    }
+    .menu-mobile{
+        display: none;
+    }
+} */
+
+/* #endregion MEDIA QUERY */
