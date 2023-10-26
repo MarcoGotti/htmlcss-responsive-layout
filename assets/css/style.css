@@ -299,11 +299,32 @@ img{
 
 
 @media screen and (min-width: 768px){
+    .container{
+        width: 60%
+    }
+
+    .container-lg{
+        width: 50%;
+    }
+
     .menu-desktop{
         display: block;
     }
+
     .menu-mobile{
         display: none;
+    }
+
+    .col-lg-6{
+        width: calc(100% / 12 * 6);
+    }
+
+    .align-self{
+        align-self: flex-end;
+    }
+
+    .planning h2{
+        font-size: 1.5rem;
     }
 }
 
