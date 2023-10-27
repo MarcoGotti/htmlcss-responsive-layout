@@ -44,12 +44,17 @@ body{
     --responsive-secondary: rgb(38, 117, 255);
     --responsive-column: rgb(181, 208, 255);
     --responsive-white: white;
+    --responsive-slogan: rgb(255, 179, 0);
 }
 
 .container{
     width: 90%;
     margin: 0 auto;
-    padding: 2rem 0;
+}
+.container-footer{
+    width: 90%;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
 .row{
@@ -62,6 +67,10 @@ body{
     display: flex;
 }
 
+.py-2{
+    padding: 2rem 0;
+}
+
 .space-btw{
     justify-content: space-between;
 }
@@ -70,14 +79,8 @@ body{
     width: 100%;
 }
 
-/* 
-
-.col-lg-6{
-    width: calc(100% / 12 * 6);
-} */
-
 [class*="col-"]{
-    padding: 1rem;
+    padding: .75rem;
 }
 
 .card{
@@ -97,7 +100,6 @@ body{
 
 .button{
     border: none;
-    margin: 1.5rem 0;
     font-weight: 600;
     letter-spacing: 2px;
 }
@@ -115,6 +117,14 @@ img{
     background-color: var(--responsive-white);
 }
 
+.primary{
+    color: var(--responsive-primary);
+}
+
+.background-primary{
+    background-color: var(--responsive-primary);
+}
+
 .b-radius-2{
     border-radius: 2rem;
 }
@@ -123,8 +133,28 @@ img{
     font-style: italic;
 }
 
+.uppercase{
+    text-transform: uppercase;
+}
+
+.font-small{
+    font-size: 0.65rem;
+}
+
 .pb-1{
     padding-bottom: 1.5rem;
+}
+
+.py-1{
+    padding: 1.5rem 0;
+}
+
+.p-relative{
+    position: relative;
+}
+
+.p-absolute{
+    position: absolute;
 }
 
 
@@ -141,13 +171,35 @@ img{
 }
 
 .logo{
-   padding: 1rem 0;
+   padding: .5rem 0;
 }
 
 .menu-mobile{
     font-size: 25px;
     display: flex;
     align-items: center;
+}
+
+.menu-desktop{
+    align-items: center;
+}
+
+.menu-desktop ul{
+    list-style: none;
+    gap: 1rem;
+    align-items: center;
+
+    & a{
+        text-decoration: none;
+    }
+}
+
+.button-nav{
+    border: none;
+    padding: 0.25rem 0.5rem 0.35rem;
+    border-radius: 1rem;
+    font-size: 12px;
+    margin-left: 1rem;
 }
 
 /* #endregion HEADER */
@@ -169,18 +221,14 @@ img{
     }
 
     .button.app-store{
-        color: var(--responsive-white);
         background-color: var(--responsive-secondary);
         padding: .5rem 2.5rem;
         border-radius: 1.25rem;
+        margin: 1.5rem 0;
     }
 
     .features #phone{
         margin-bottom: -1.25rem;
-    }
-
-    .features img{
-        max-width: 250px;
     }
 
     .features .fa-solid{
@@ -212,11 +260,7 @@ img{
         justify-content: center;
     }
 
-    /* section .testimonials */
-
-    .testimonials .section-name{
-        text-transform: uppercase;
-    }
+    /* SECTION .TESTIMONIALS */
 
     .testimonials h2{
         color: var(--responsive-primary);
@@ -251,8 +295,65 @@ img{
         }
     }
     .signature{
-        text-transform: uppercase;
         font-size: 14px;
+    }
+
+    /* SECTION .BENEFITS */
+
+    .number{
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .button-more{
+        padding: .5rem 0;
+        border-radius: 1.25rem;
+        width: 7rem;
+        max-width: 100%;
+    }
+
+    /* SECTION ABOUT-US */
+
+    .about-us-photo{
+        width: 140px;
+        aspect-ratio: 1;
+    }
+
+    .about-us-photo img{
+        border-radius: 50%;
+    }
+
+    .quotes{
+        top: 0;
+        right: 0;
+        z-index: 0;
+        font-size: 3rem;
+    }
+
+    .about-us h3{
+        font-weight: 600;
+        line-height: 1.5rem;
+    }
+
+    .button-find-me{
+        border: none;
+        padding: 0.25rem 1rem 0.35rem;
+        border-radius: 1rem;
+        font-size: 12px;
+
+    }
+
+    /* SECTION START */
+
+    .start h2{
+        font-size: 2rem;
+        color: var(--responsive-slogan);
+    }
+
+    .button-get-started{
+        padding: 1rem 3rem;
+        border-radius: 1.5rem;
+        margin: 1.5rem 0;
     }
 
 
@@ -278,6 +379,18 @@ img{
     .col-md-8{
         width: calc(100% / 12 * 8);
     }
+
+    .col-md-7{
+        width: calc(100% / 12 * 7);
+    }
+
+    .col-md-6{
+        width: calc(100% / 12 * 6);
+    }
+
+    .col-md-5{
+        width: calc(100% / 12 * 5);
+    }
     
     .col-md-4{
         width: calc(100% / 12 * 4);
@@ -295,28 +408,51 @@ img{
         text-align: initial;
         padding: 0 1rem;
     }
+
+    .about-us h2{
+        font-size: 2.5rem;
+    }
 }  
 
 
 @media screen and (min-width: 768px){
     .container{
-        width: 60%
+        width: 65%;
+        max-width: 1160px;
+    }
+
+    .lg-d-flex{
+        display: flex;
     }
 
     .container-lg{
-        width: 50%;
+        width: 55%;
     }
 
     .menu-desktop{
-        display: block;
+        display: flex;
+        font-size: 0.75rem;
     }
 
     .menu-mobile{
         display: none;
     }
 
+    .col-lg-8{
+        width: calc(100% / 12 * 8);
+    }
+
     .col-lg-6{
         width: calc(100% / 12 * 6);
+    }
+
+    .col-lg-4{
+        width: calc(100% / 12 * 4);
+    }
+
+    #phone img{
+        max-width: 400px;
+
     }
 
     .align-self{
@@ -325,6 +461,10 @@ img{
 
     .planning h2{
         font-size: 1.5rem;
+    }
+
+    .testimonial-photo{
+        width: 220px;
     }
 }
 

@@ -13,7 +13,18 @@
             <div class="logo">
                 <img src="./assets/img/logo.png" alt="">
             </div>
-            <div class="menu-desktop">Still to do</div>
+            <div class="menu-desktop">
+                <div class="menu d-flex">
+                    <ul class="d-flex">
+                        <li><a class="white" href="">Planning</a></li>
+                        <li><a class="white" href="">Testimonials</a></li>
+                        <li><a class="white" href="">Features</a></li>
+                        <li><a class="white" href="">About us</a></li>
+                    </ul>
+                    <button class="button-nav background-white">Get Started</button>
+                </div>
+                
+            </div>
             <div class="menu-mobile">
                 <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
             </div>
@@ -25,10 +36,12 @@
             <div class="container py-2">
                 <div class="row">
                     <div class="col col-md-8">
-                        <div class="card">
-                            <h3>Get a demo application</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum iste, porro ratione fugiat quidem modi aut quisquam eveniet unde.</p>
-                            <button class="button app-store white"><i class="fa-brands fa-apple"></i>&nbsp;App Store</button>
+                        <div class="card lg-d-flex">
+                            <div>
+                               <h3>Get a demo application</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum iste, porro ratione fugiat quidem modi aut quisquam eveniet unde.</p>
+                                <button class="button app-store white"><i class="fa-brands fa-apple"></i>&nbsp;App Store</button> 
+                            </div>                           
                             <div id="phone">
                                 <img src="./assets/img/phone.png" alt="phone">
                             </div>
@@ -94,7 +107,7 @@
         <section class="testimonials">
             <div class="container py-2 text-center">
                 <div class="text">
-                    <div class="section-name pb-1">testimonials</div>
+                    <div class="section-name uppercase pb-1">testimonials</div>
                     <h2 class="pb-1">We are committed expert partners</h2>
                     <p class="pb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident necessitatibus recusandae dolore facere maiores corporis beatae eius, ipsum exercitationem, voluptates sit repellat similique optio quaerat odit nobis reprehenderit excepturi ipsa.</p>
                 </div>
@@ -106,7 +119,7 @@
                         <div class="message">
                             <p><i class="fa-solid fa-quote-left"></i>&nbsp;Vitae Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, voluptatibus libero! Aut officia dolores laborum corrupti cupiditate ratione tenetur eos.&nbsp;<i class="fa-solid fa-quote-right"></i></p>
                         </div>
-                        <div class="signature">Nat Reynolds</div>
+                        <div class="signature uppercase">Nat Reynolds</div>
                     </div>
                 </div>
                 <div class="testimonial white b-radius-2">
@@ -117,7 +130,7 @@
                         <div class="message">
                             <p><i class="fa-solid fa-quote-left"></i>&nbsp;Vitae Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, voluptatibus libero! Aut officia dolores laborum corrupti cupiditate ratione tenetur eos.&nbsp;<i class="fa-solid fa-quote-right"></i></p>
                         </div>
-                        <div class="signature">celia almeda</div>
+                        <div class="signature uppercase">celia almeda</div>
                     </div>
                 </div>
                 <div class="testimonial white b-radius-2">
@@ -128,7 +141,7 @@
                         <div class="message">
                             <p><i class="fa-solid fa-quote-left"></i>&nbsp;Vitae Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, voluptatibus libero! Aut officia dolores laborum corrupti cupiditate ratione tenetur eos.&nbsp;<i class="fa-solid fa-quote-right"></i></p>
                         </div>
-                        <div class="signature">bob roberts</div>
+                        <div class="signature uppercase">bob roberts</div>
                     </div>
                 </div>
             </div>
@@ -217,7 +230,7 @@
                                     <i class="fa-solid fa-quote-left"></i>
                                 </div>
                             </div>
-                            <h4 class="primary pb-1">I help companies consectetur adipisicing elit. Maiores, deleniti perferendis.</h4>
+                            <h3 class="primary pb-1">I help companies consectetur adipisicing elit. Maiores, deleniti perferendis.</h3>
                             <div class="pb-1">
                                 <button class="button-find-me white background-primary"><i class="fa-brands fa-linkedin"></i>&nbsp;Find me on linkedin</button>
                             </div>
@@ -229,23 +242,24 @@
         </section>
         <!-- */ SECTION ABOUT US -->
         <section class="start">
-            <div class="container text-center p-05">
-                <h4>get started</h4>
-                <h3>Simple, Transparent Pricing</h3>
-                <h2>It's Free!</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, sint nemo magni voluptatibus cumque, nostrum reiciendis alias incidunt et culpa, in cupiditate asperiores velit. Delectus!</p>
-                <button>Get Started</button>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+            <div class="container-footer text-center background-primary py-2">
+                <div class="white uppercase pb-1">get started</div>
+                <h3 class="white pb-1">Simple, Transparent Pricing</h3>
+                <h2 class="pb-1">It's Free!</h2>
+                <div class="font-small white">We are still in beta and we will be for a while. As we add more functionality, we'll look into other plans with more control</div>
+                <button class="button button-get-started background-white primary">Get Started</button>
+                <div class="white font-small">Copyright 2021 Boolean &#x2022; Classe XX &#x2022; <a class="white" href="#">Privacy policy</a></div>
+                                    
             </div>
         </section>
         <!-- */ SECTION START -->
     </main>
     <!-- */ MAIN -->
     <footer class="site-footer">
-        <div class="container text-center p-05">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quam illo consectetur, asperiores sunt optio molestias unde! Nobis, sint dicta?</p>
-            <p><a href="#">Lorem ipsum</a>, dolor sit amet consectetur adipisicing</p>
-            <a href="#">Boolean careers</a>
+        <div class="container-footer text-center">
+            <div class="white font-small py-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quam illo consectetur, asperiores sunt optio molestias unde! Nobis, sint dicta?</.>
+            <div class="white font-small py-1"><a href="#">Lorem ipsum</a>, dolor sit amet consectetur adipisicing
+            <a href="#">Boolean careers</a></div>
         </div>
     </footer>
     
