@@ -42,9 +42,10 @@ body{
 :root{
     --responsive-primary: #9593e6;
     --responsive-secondary: rgb(38, 117, 255);
-    --responsive-column: rgb(181, 208, 255);
+    --responsive-column: rgb(187, 221, 250);
     --responsive-white: white;
     --responsive-slogan: rgb(255, 179, 0);
+    --responsive-font-light: rgb(94, 94, 94);
 }
 
 .container{
@@ -65,6 +66,11 @@ body{
 
 .d-flex{
     display: flex;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
 }
 
 .py-2{
@@ -111,6 +117,10 @@ img{
 
 .white{
     color: var(--responsive-white);
+}
+
+.dark{
+    color: var(--responsive-font-light);
 }
 
 .background-white{
@@ -207,8 +217,10 @@ img{
 
 /* #region MAIN */
 
-#site-main p{
-        line-height: 1.25rem;
+#site-main p,
+#section-name,
+#get-started{
+        line-height: 1.5rem;
         font-size: 0.75rem;
 }
 
@@ -396,6 +408,10 @@ img{
         width: calc(100% / 12 * 4);
     }
 
+    #phone img{
+        max-width: 200px;
+    }
+
     .planning h2{
         font-size: 3.5rem;
     }
@@ -423,6 +439,7 @@ img{
 
     .lg-d-flex{
         display: flex;
+        flex-direction: row;
     }
 
     .container-lg{
@@ -450,9 +467,18 @@ img{
         width: calc(100% / 12 * 4);
     }
 
+    #phone{
+        display: flex;
+        align-items: flex-end;
+    }
+
     #phone img{
         max-width: 400px;
+    }
 
+    #img-planning2{
+        width: 50%;
+        margin: auto;
     }
 
     .align-self{
@@ -468,4 +494,10 @@ img{
     }
 }
 
+/* media-query solo per abbellire img/phone.png nel passaggio tra viewport 768px e 1160px */
+@media screen and (min-width: 1160px){
+    .pr-xlg-2{
+        padding-right: 2rem;
+    }
+}
 /* #endregion MEDIA QUERY */
